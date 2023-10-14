@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 *{ 
   font-family: 'Open Sans', sans-serif;
@@ -12,7 +13,13 @@
 
 .sidebar{ 
   align-items: flex-end; 
-  user-select: none;
+  user-select: none; 
+  max-height: 100vh; 
+  width: 250px;  
+  top:0; 
+  left: 0; 
+  overflow-y: auto; 
+  overflow-x: hidden;
 }
 
 
@@ -36,14 +43,15 @@ color: rgb(231, 233, 234);
 }
 
 .flex-container .content{ 
-  font-weight: 700; 
+  font-weight: 300; 
   line-height: 24px; 
   font-size: 20px; 
   color: rgb(231, 233, 234); 
   margin-left: 50px;  
   margin-top: -29px;
   display: flex;
-}
+} 
+
 
 .logo img{ 
  height: 45px;   
@@ -55,4 +63,68 @@ line-height: 20px;
 margin-left: 29px; 
 font-weight: 800;
 } 
+
+
+.post-button { 
+margin-left: 50px;
+margin-top: 20px;  
+}
+
+.post-button a {
+  text-decoration: none;  
+}
+
+.post-button button {
+  background-color: #1DA1F2; 
+  color: #fff; 
+  font-size: 20px; 
+  padding: 15px 80px; 
+  border-radius: 28px;
+  border: none;  
+  cursor: pointer;  
+  font-size: 16px; 
+  font-weight: 700;
+}
+ 
+.image-container{ 
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  margin: 10px;
+  position: relative; 
+  overflow: hidden;
+} 
+
+
+
+.image-container img {
+  border-radius: 50%;
+  max-width: 100%; 
+  width: 40px;  
+}
+
+
+.text-container {
+  display: flex; 
+  align-self: center;
+}
+
+.content-text{ 
+  color: grey; 
+  margin-left: -5px;
+}
+.text-container p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 8px ; 
+  margin-top: -2px;
+}
+
+.material-symbols-outlined {
+  font-size: 2px;
+  margin-left: auto; 
+  font-weight: 100;
+}
 
