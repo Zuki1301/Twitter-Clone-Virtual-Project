@@ -15,7 +15,7 @@
   align-items: flex-end; 
   user-select: none; 
   max-height: 100vh; 
-  width: 250px;  
+  width: 259px;  
   top:0; 
   left: 0; 
   overflow-y: auto; 
@@ -47,8 +47,8 @@ color: rgb(231, 233, 234);
   line-height: 24px; 
   font-size: 20px; 
   color: rgb(231, 233, 234); 
-  margin-left: 50px;  
-  margin-top: -29px;
+  margin-left: 40px;  
+  margin-top: -26px;
   display: flex;
 } 
 
@@ -66,7 +66,7 @@ font-weight: 800;
 
 
 .post-button { 
-margin-left: 50px;
+margin-left: 45px;
 margin-top: 20px;  
 }
 
@@ -113,7 +113,7 @@ margin-top: 20px;
 
 .content-text{ 
   color: grey; 
-  margin-left: -5px;
+  margin-left: -2px;
 }
 .text-container p {
   font-size: 15px;
