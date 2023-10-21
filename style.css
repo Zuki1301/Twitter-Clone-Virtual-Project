@@ -5,63 +5,54 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif; 
-  color: white;
+  color: rgb(231, 233, 234);
   background: black; 
   box-sizing: border-box; 
-  flex-grow: 1;
+  margin: 0; 
+  padding: 0; 
 } 
-
-.sidebar{ 
-  align-items: flex-end; 
-  user-select: none; 
-  max-height: 100vh; 
-  width: 259px;  
-  top:0; 
-  left: 0; 
-  overflow-y: auto; 
-  overflow-x: hidden;
+.main-container{  
+display: flex; 
+height: calc(100vh - 1px);
+overflow: hidden 
 }
 
+.sidebar{  
+  width: 250px; 
+  height: 100%; 
+  overflow-y: hidden; 
+overflow-x: hidden;  
+border-right: 1px solid rgb(47, 51, 54); 
+}
+
+.categories .category{ 
+width: 100%; 
+display: flex; 
+align-items: center; 
+height: 40px; 
+padding: 0 35px ; 
+font-size: 14px; 
+font-weight: 400; 
+cursor: pointer;
+}
+.categories .home{ 
+  margin-left: 20px; 
+  font-weight: 600;
+}
+.categories .content{ 
+  margin-left: 20px;  
+  width: 0px; 
+  padding-left: 1px ;
+} 
 
 
 .my-custom-color-class path {
   fill: rgb(231, 233, 234);   
 }
 
-
-.flex-container{ 
-display: inline-block;
-align-items: center; 
-flex-direction: row; 
-width: 100%; 
-margin-left: 50px; 
-cursor: pointer;  
-margin-bottom: 15px; 
-margin-top: 20px;
-font-weight: 300; 
-color: rgb(231, 233, 234);
-}
-
-.flex-container .content{ 
-  font-weight: 300; 
-  line-height: 24px; 
-  font-size: 20px; 
-  color: rgb(231, 233, 234); 
-  margin-left: 40px;  
-  margin-top: -26px;
-  display: flex;
-} 
-
-
 .logo img{ 
- height: 45px;   
- flex-grow: 1; 
- display: block; 
-position: relative; 
-width: 65px; 
-line-height: 20px; 
-margin-left: 29px; 
-font-weight: 800;
+ width : 50px;    
+margin-left: 18px; 
 } 
 
 
@@ -78,7 +69,7 @@ margin-top: 20px;
   background-color: #1DA1F2; 
   color: #fff; 
   font-size: 20px; 
-  padding: 15px 80px; 
+  padding: 10px 70px; 
   border-radius: 28px;
   border: none;  
   cursor: pointer;  
@@ -94,10 +85,9 @@ margin-top: 20px;
   border-radius: 4px;
   margin: 10px;
   position: relative; 
-  overflow: hidden;
+  overflow: hidden;  
+ cursor: pointer;
 } 
-
-
 
 .image-container img {
   border-radius: 50%;
@@ -123,8 +113,147 @@ margin-top: 20px;
 }
 
 .material-symbols-outlined {
-  font-size: 2px;
+  font-size: 1px;
   margin-left: auto; 
-  font-weight: 100;
+  font-weight: 100;  
+  color: rgb(47, 51, 54); 
+  margin-bottom: 5px;
 }
 
+.mainbody{ 
+display: inline;  
+border-right: 1px solid rgb(47, 51, 54);
+width: 700px; 
+height: 100%;
+
+} 
+
+.home-container{ 
+border-bottom: 1px solid rgb(47, 51, 54);
+height: 105px;
+}
+.home-container .heading{  
+display: flex;
+margin-left: 17px;  
+margin-top: 15px;
+font-weight: 500; 
+font-size: large; 
+cursor: pointer; 
+} 
+
+.home-container .explore{ 
+display: flex;
+margin-left: 175px ; 
+justify-content: space-between; 
+color: gray; 
+font-weight: 500; 
+margin-top:35px ;  
+cursor: pointer; 
+} 
+
+.home-container .following{ 
+  margin-right: 175px; 
+  cursor: pointer;
+} 
+
+.mind {  
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  margin: 10px;
+  position: relative; 
+  overflow: hidden;  
+ cursor: pointer;
+  
+}  
+ 
+.post-tag{ 
+border-bottom: 1px  solid rgb(47, 51, 54); 
+height: 120px;
+}
+.mind img{ 
+  border-radius: 50%; 
+  width: 40px; 
+}
+
+.mind .post{  
+  margin-left: 15px; 
+  margin-top: 1px;
+  color: gray; 
+  font-size: larger; 
+  font-weight: 300;
+} 
+
+.button-menu{  
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.button-tag { 
+  margin-left: 45px;
+  margin-top: 20px;  
+  }
+  
+  .button-tag a {
+    text-decoration: none;  
+  }
+  
+  .button-tag button {
+    background-color: #1DA1F2; 
+    color: #fff; 
+    font-size: 10px; 
+    padding: 5px 15px; 
+    border-radius: 50px; 
+    margin-left: 310px;
+    border: none;  
+    cursor: pointer;  
+    font-size: 15px; 
+    font-weight: 700;
+  } 
+.show p{  
+  border-bottom: 1px solid rgb(47, 51, 54) ; 
+  height: 35px; 
+ color: #1DA1F2; 
+padding-left: 275px;
+} 
+.image-profile img{  
+  width: 45px; 
+  height: 45px;
+  margin-left: 20px; 
+  margin-top: 5px; 
+  border-radius: 50%;
+} 
+
+.text-post { 
+    text-align: center;  
+      display: flex;
+      justify-content: center; 
+      align-items: center;  
+      font-size: medium; 
+      font-weight: 400; 
+      margin-top: -40px; 
+      margin-left: 85px;
+    }  
+.image-profile{ 
+border-bottom: 1px solid rgb(47, 51, 54);
+}
+  .picture-tag p{ 
+    margin-left: 85px; 
+    margin-top: -15px;
+  }
+.scrollable-container{ 
+overflow-y: auto;
+max-height: 100%;
+}
+.react-tag{  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;  
+  height: 50px; 
+  padding: 0 12px; 
+  position: sticky; 
+
+}
+    
