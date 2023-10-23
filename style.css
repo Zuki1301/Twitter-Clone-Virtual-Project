@@ -211,8 +211,9 @@ height: 120px;
     cursor: pointer;  
     font-size: 15px; 
     font-weight: 700;
-  } 
-.show p{  
+  }  
+  
+  .show p{  
   border-bottom: 1px solid rgb(47, 51, 54) ; 
   height: 35px; 
  color: #1DA1F2; 
@@ -243,10 +244,7 @@ border-bottom: 1px solid rgb(47, 51, 54);
     margin-left: 85px; 
     margin-top: -15px;
   }
-.scrollable-container{ 
-overflow-y: auto;
-max-height: 100%;
-}
+
 .react-tag{  
   display: flex;
   justify-content: space-between; 
@@ -255,5 +253,123 @@ max-height: 100%;
   padding: 0 12px; 
   position: sticky; 
 
+} 
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color:rgb(47, 51, 54) ;
+  padding: 8px 16px;
+  width: 280px;  
+  border-radius: 60px; 
+  margin-left: 5px;
 }
-    
+
+.search-bar i {
+  margin-right: 10px; 
+  background-color: rgb(47, 51, 54); 
+  color: gray;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #14171A;  
+  }
+.search-bar input {
+  transition: color 0.2s;
+}
+
+
+.subscription-section {
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 250px; 
+  max-height: 250px; 
+  border: 1px solid none ; 
+  background-color: rgb(47, 51, 54); 
+  border-radius: 60px;
+}
+
+.subscription-title {
+  font-size: 20px;
+  margin-bottom: 10px; 
+  background-color: rgb(47, 51, 54); 
+  font-weight: 600;
+}
+
+.subscription-description {
+  font-size: 12px;
+  margin-bottom: 20px; 
+  background-color: rgb(47, 51, 54); 
+  font-weight: 500;
+}
+
+.subscribe-button {
+  background-color: #1DA1F2;
+  padding: 7px 15px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer; 
+  border-radius: 50px; 
+  font-weight: 600; 
+  margin-left: 6px;
+}
+
+.subscribe-button:hover {
+  background-color: #0d91e3;
+} 
+
+.trending-now{
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 250px; 
+  max-height: 250px; 
+  border: 1px solid none ; 
+  background-color: rgb(47, 51, 54); 
+  border-radius: 50px; 
+  max-width: 250px; 
+  max-height: 300px;
+}
+
+.trending-now h5{ 
+  font-size: 15px;
+  margin-bottom: 10px; 
+  background-color: rgb(47, 51, 54); 
+  font-weight: 600; 
+  margin-left: 15px; 
+  width: 120px;  
+  margin-bottom: 15px;
+}
+ 
+.SA-trends { 
+font-size: small; 
+color: gray; 
+background-color: rgb(47, 51, 54); 
+margin-bottom: 0; 
+margin-top: -5px;  
+margin-left: 15px;  
+margin-bottom: 7px; 
+border: none;  
+
+}  
+
+.hashtags{ 
+  background-color: rgb(47, 51, 54); 
+  margin-left: 15px;  
+  margin-top: -10px;
+}
+ 
+.twitter-footer span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 40px;
+  color: #606060;
+  cursor: pointer; 
+  display: block; 
+} 
